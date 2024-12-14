@@ -1,0 +1,424 @@
+:root {
+    --bs-emphasis-color-rgb: #0D94C8;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E202B;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #1E202B;
+}
+
+.container-fluid {
+    padding: 25px 10vw; /* Use relative units for better scaling */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1px 15px; /* Reduced padding for smaller screens */
+}
+
+nav a.nav-link {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 10px;
+    transition: 0.4s;
+    border-radius: 15px;
+    border: 2px solid #1E202B;
+}
+
+.navbar-nav .nav-link.active,
+nav a.nav-link:hover {
+    color: var(--bs-emphasis-color-rgb);
+    border-color: #0D94C8;
+}
+
+.logo {
+    width: 70px;
+}
+.navbar-brand {
+    padding-bottom: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.under-weather {
+    color: grey;
+    font-size: 10px;
+    width: 100%;
+}
+.home {
+    background-image: url(../images/banner.png);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 200px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#SearchInput{
+    width: 70%;
+    background-color: #1E202B;
+    height: 55px;
+    padding: 15px;
+    outline:none;
+    font-size: 14px;
+    caret-color: #fff;
+    border: none;
+    position: relative;
+    border-radius: 30px;
+}
+#findBtn{
+    background-color: #0D94C8;
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    position: absolute;
+    right: 15.5%;
+    font-size: 16px;
+}
+#badges{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color: #818181;
+    padding-bottom: 100px;
+
+}
+#badges .top{
+    height: 45px;
+    padding-inline: 20px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.blue{
+    color: #0D94C8;
+}
+#badges .bottom{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+#badges .bottom p{
+    margin-right: 30px;
+}
+#badges .bottom img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+#badges .middle{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 30px;
+
+}
+#badges img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+#badges #badge-1 img.main{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+}
+#badges #badge-1 .middle p{
+font-size: 90px;
+font-weight: 600;
+color: #fff;
+margin-bottom: 0;
+}
+#badges #badge-3 .middle,
+#badges #badge-2 .middle{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#badges #badge-3 .middle p,
+#badges #badge-2 .middle p{
+    font-size:18px;
+    padding-top: 10px;
+}
+#badges #badge-2 .top,
+#badges #badge-3 .top{
+    text-align: center;
+    justify-content: center;
+
+}
+
+#badges #badge-1 .top{
+    background-color: #2E303E;
+    border-top-left-radius: 10px;
+
+}
+#badges #badge-2 .top{
+    background-color: #232530;
+
+}
+#badges #badge-3 .top{
+    background-color: #2E303E;
+    border-top-right-radius: 10px;
+}
+#badge-1,#badge-2,#badge-3{
+    width: 25%;
+    height: 400px;
+    border-radius: 10px;
+}
+#badge-1{
+    background-color: #323544;
+}
+#badge-2{
+    background-color: #272936;
+    text-align: center;
+}
+#badge-3{
+    background-color: #323544;
+    text-align: center;
+
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+input{
+    color: #fff;
+}
+.contact{
+    background-color: #272936;
+    padding-block: 50px;
+}
+#subscribe{
+    background-color: #0D94C8;
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    right:50.5%;
+    bottom: -133px;
+    position: absolute;
+}
+.contact-icons i{
+    background-color: #1E202B;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 20px;
+    color:  #0D94C8;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.contact-icons i:hover{
+    background-color: #0D94C8;
+    color: #1E202B;
+}
+.contact input{
+    width: 100%;
+    background-color: #1E202B;
+    height: 55px;
+    padding: 15px;
+    outline:none;
+    font-size: 14px;
+    caret-color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin-right: 0;
+    position: relative;
+} 
+.contact-icons{
+    padding-right: 80px;
+    background-color: #272936;
+}
+footer{
+    color: gray;
+    text-align: center;
+    background-color: #21232c;
+    padding: 5px;
+}
+.max-temp{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+@media  (min-width:769px) and (max-width:1200px){
+    .home {
+        height: 70vh;
+        margin-bottom: 0;
+    }
+    #badges{
+        flex-direction: column;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    #badges .bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #badges .bottom p{
+        margin-right: 30px;
+    }
+    #badges .bottom i{
+        margin-right: 10px;
+    }
+    #badges .middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px;
+    
+    }
+    #badges #badge-1 .middle p{
+    font-size: 70px;
+    }
+    
+    #badges #badge-1 .top{
+        border-radius: 10px;
+    
+    }
+    #badges #badge-3 .top{
+        border-radius: 10px;
+    }
+    #badge-1,#badge-2,#badge-3{
+        width: 80%;
+        height: 400px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+    }
+    .contact{
+        background-color: #272936;
+        padding-block: 30px;
+        margin-top: 400px;
+        flex-direction: column;
+    }
+    #subscribe{
+        margin-top: 70px;
+        padding: 8px 20px;
+        position:relative;
+        font-size: 14px;
+        left:85%;
+        bottom: 0%;
+    }
+    .contact-input{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-icons{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 80px;
+        justify-content: center;
+    }
+    .contact input{
+        width: 70%;
+        background-color: #1E202B;
+        height: 50px;
+        position: absolute;
+        margin-right: 0;
+        margin-left: 9%;
+    }
+    footer{
+        font-size: 12px;
+        padding-inline: 30px;
+    }
+}
+@media (max-width:768px){
+    .home {
+        height: 100vh;
+        margin-bottom: 0;
+    }
+    #badges{
+        flex-direction: column;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    #badges .bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #badges .bottom p{
+        margin-right: 20px;
+    }
+    #badges .bottom i{
+        margin-right: 10px;
+    }
+    #badges .middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px;
+    
+    }
+    #badges #badge-1 .middle p{
+    font-size: 70px;
+    }
+    
+    #badges #badge-1 .top{
+        border-radius: 10px;
+    
+    }
+    #badges #badge-3 .top{
+        border-radius: 10px;
+    }
+    #badge-1,#badge-2,#badge-3{
+        width: 80%;
+        height: 400px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    .contact{
+        background-color: #272936;
+        padding-block: 30px;
+        margin-top: 650px;
+        flex-direction: column;
+    }
+    #subscribe{
+        margin-top: 70px;
+        padding: 8px 20px;
+        position:relative;
+        font-size: 14px;
+        left:55%;
+        bottom: 50%;
+    }
+    .contact-icons{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .contact input{
+        width: 70%;
+        background-color: #1E202B;
+        height: 50px;
+        position: absolute;
+        margin-right: 50px;
+    }
+    footer{
+        font-size: 12px;
+        padding-inline: 30px;
+    }
+}
